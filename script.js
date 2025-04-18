@@ -6,45 +6,45 @@ const scores = {
   const resultData = {
     croco: {
       title: "Bombardiro Crocodilo",
-      image: "Bombardiro Crocodilo.jpg",
+      image: "bombardiro-crocodilo.jpg",
       desc: "You go hard… until you crash. Deadlines are your personal warzone.",
-      audio: "Bombardiro crocodilo.mp3"
+      audio: "bombardiro-crocodilo.mp3"
     },
     tung: {
       title: "Tung Tung Tung sahur",
-      image: "Tung Tung Tung sahur.jpg",
+      image: "tung-tung-tung.jpg",
       desc: "Midnight scroller with mysterious thoughts. Are you okay? No. Will you sleep? Also no.",
-      audio: "Tung Tung Tung sahur.mp3"
+      audio: "tung-tung-tung.mp3"
     },
     banana: {
       title: "Chimpanzini Bananini",
-      image: "Chimpanzini Bananini.jpg",
+      image: "chimpanzini-bananini.jpg",
       desc: "You romanticize life… and then ignore it completely.",
-      audio: "Chimpanzini Bananini.mp3"
+      audio: "chimpanzini-bananini.mp3"
     },
     tralala: {
       title: "Tralalero Tralala",
-      image: "Tralalero Tralala.jpg",
+      image: "tralalero-tralala.jpg",
       desc: "You have chaotic good energy and live by vibes and memes.",
-      audio: "Tralalero Tralala.mp3"
+      audio: "tralalero-tralala.mp3"
     },
     patapim: {
       title: "Brr brr Patapim",
-      image: "Brr brr Patapim.jpg",
+      image: "patapim.jpg",
       desc: "Old memories haunt you. But you’re oddly chill about it.",
-      audio: "Brr brr Patapim.mp3"
+      audio: "patapim.mp3"
     },
     lirila: {
       title: "Lirilì Larlà",
-      image: "Lirilì Larilà.jpg",
+      image: "lirili-larla.jpg",
       desc: "Mysterious desert wisdom. You're slow, strange, and oddly poetic.",
-      audio: "Lirilì Larilà.mp3"
+      audio: "lirili-larla.mp3"
     },
     trippi: {
       title: "Trippi Troppi",
-      image: "Trippi Troppi.jpg",
+      image: "trippi-troppi.jpg",
       desc: "You are the shrimp-cat hybrid of distracted genius. Internet is your playground.",
-      audio: "Trippi Troppi.mp3"
+      audio: "trippi-troppi.mp3"
     }
   };
   
