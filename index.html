@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spirit Beasts Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="cover" class="page active">
+    <h1>Spirit Beasts Quiz</h1>
+    <p>Your Spirit Beasts Today</p>
+    <button onclick="goToPage('intro')">Start</button>
+  </div>
+
+  <div id="intro" class="page">
+    <h2>Introduction</h2>
+    <p>Based on your choices, we'll reveal which Spirit Beast you are. Are you ready?</p>
+    <button onclick="goToPage('questions')">Continue</button>
+  </div>
+
+  <div id="questions" class="page"></div>
+
+  <div id="slider-question" class="page">
+    <h2>How full is your energy tank today?</h2>
+    <input type="range" min="0" max="100" value="50" id="energySlider">
+    <p id="sliderLabel">🪫 Measuring...</p>
+    <button onclick="submitSlider()">Continue</button>
+  </div>
+
+  <div id="drag-question" class="page">
+    <h2>Rank the Spirit Beasts by how much you relate to them</h2>
+    <ul id="dragList">
+      <li draggable="true">🪵</li>
+      <li draggable="true">🦈</li>
+      <li draggable="true">🐊</li>
+      <li draggable="true">🦶</li>
+      <li draggable="true">🐘</li>
+      <li draggable="true">🦐</li>
+      <li draggable="true">🦍</li>
+    </ul>
+    <button onclick="saveDragResult()">See Result</button>
+  </div>
+
+  <div id="result" class="page">
+    <h2>Your Spirit Beast is:</h2>
+    <img id="resultImage" src="" alt="Result Image">
+    <div class="title-wrapper">
+      <div id="resultTitle" class="title-line"></div>
+    </div>
+    <p id="resultDesc"></p>
+    <audio id="beastAudio" controls style="display:none;"></audio>
+    <button onclick="restartQuiz()">Try Again</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
