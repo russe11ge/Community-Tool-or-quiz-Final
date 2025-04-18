@@ -7,50 +7,50 @@ const scores = {
     croco: {
       title: "Bombardiro Crocodilo",
       image: "bombardiro-crocodilo.jpg",
-      desc: "You go hard… until you crash. Deadlines are your personal warzone.",
+      // desc: "You go hard… until you crash. Deadlines are your personal warzone.",
       audio: "bombardiro-crocodilo.mp3"
     },
     tung: {
       title: "Tung Tung Tung sahur",
       image: "tung-tung-tung.jpg",
-      desc: "Midnight scroller with mysterious thoughts. Are you okay? No. Will you sleep? Also no.",
+      // desc: "Midnight scroller with mysterious thoughts. Are you okay? No. Will you sleep? Also no.",
       audio: "tung-tung-tung.mp3"
     },
     banana: {
       title: "Chimpanzini Bananini",
       image: "chimpanzini-bananini.jpg",
-      desc: "You romanticize life… and then ignore it completely.",
+      // desc: "You romanticize life… and then ignore it completely.",
       audio: "chimpanzini-bananini.mp3"
     },
     tralala: {
       title: "Tralalero Tralala",
       image: "tralalero-tralala.jpg",
-      desc: "You have chaotic good energy and live by vibes and memes.",
+      // desc: "You have chaotic good energy and live by vibes and memes.",
       audio: "tralalero-tralala.mp3"
     },
     patapim: {
       title: "Brr brr Patapim",
       image: "patapim.jpg",
-      desc: "Old memories haunt you. But you’re oddly chill about it.",
+      // desc: "Old memories haunt you. But you’re oddly chill about it.",
       audio: "patapim.mp3"
     },
     lirila: {
       title: "Lirilì Larlà",
       image: "lirili-larla.jpg",
-      desc: "Mysterious desert wisdom. You're slow, strange, and oddly poetic.",
+      // desc: "Mysterious desert wisdom. You're slow, strange, and oddly poetic.",
       audio: "lirili-larla.mp3"
     },
     trippi: {
       title: "Trippi Troppi",
       image: "trippi-troppi.jpg",
-      desc: "You are the shrimp-cat hybrid of distracted genius. Internet is your playground.",
+      // desc: "You are the shrimp-cat hybrid of distracted genius. Internet is your playground.",
       audio: "trippi-troppi.mp3"
     }
   };
   
   const questions = [
     {
-      text: "What was the last thing that made you mentally collapse out of nowhere?",
+      text: "What's the thing that will make you mentally collapse out?",
       options: [
         { text: "Someone stared at you and said: 'You can finish this tonight, right?'", type: 'croco' },
         { text: "A stranger Airdropped you a selfie on the subway", type: 'tralala' },
@@ -62,17 +62,17 @@ const scores = {
     {
       text: "What’s your chair’s name?",
       options: [
-        { text: "I talk to it but it has no name", type: 'lirila' },
+        { text: "No name", type: 'lirila' },
         { text: "Pain container", type: 'croco' },
-        { text: "Stinky Baby / Little Angel", type: 'tung' },
+        { text: "Little Angel", type: 'tung' },
         { text: "Model X", type: 'tralala' },
-        { text: "It never talks back. But it listens.", type: 'banana' }
+        { text: "Listener", type: 'banana' }
       ]
     },
     {
       text: "Which sound completely destroys your mental stability?",
       options: [
-        { text: "Computer fan going full jet engine", type: 'croco' },
+        { text: "Computer fan running at full speed", type: 'croco' },
         { text: "Phone buzzing with 7 notifications", type: 'tung' },
         { text: "Roommate playing Just Dance at 2AM", type: 'tralala' },
         { text: "Someone saying 'This isn’t your business'", type: 'banana' },
@@ -96,14 +96,14 @@ const scores = {
         { text: "Was I fake-smiling in that IG post?", type: 'tralala' },
         { text: "Still haunted by high school moments", type: 'banana' },
         { text: "Can I finish this project in one go?", type: 'croco' },
-        { text: "20 mental tabs open, no thoughts", type: 'tung' }
+        { text: "20 mental tabs open, but no thoughts", type: 'tung' }
       ]
     },
     {
       text: "What does your brain feel like right now?",
       options: [
         { text: "Exploded kitchen", type: 'tung' },
-        { text: "Stationery store of sticky notes", type: 'banana' },
+        { text: "Honey pot", type: 'banana' },
         { text: "Office with yelling manager", type: 'croco' },
         { text: "Room full of meme posters", type: 'tralala' },
         { text: "Too quiet. Too windy. Too light.", type: 'lirila' }
@@ -112,18 +112,18 @@ const scores = {
     {
       text: "Why do you open your phone?",
       options: [
-        { text: "One text → TikTok for 30 min", type: 'tung' },
-        { text: "Just to check time… now 15 apps deep", type: 'banana' },
-        { text: "Instagram → someone else's life", type: 'trippi' },
-        { text: "Trying to research → ordered food", type: 'lirila' },
-        { text: "Open then instantly want to yeet it", type: 'patapim' }
+        { text: "Reply one text, then TikTok for 30 min", type: 'tung' },
+        { text: "Just to check time, then now 15 apps deep", type: 'banana' },
+        { text: "Instagram, then lurks someone else's life", type: 'trippi' },
+        { text: "Trying to do research, then ordered food", type: 'lirila' },
+        { text: "Just open the shopping app", type: 'patapim' }
       ]
     },
     {
       text: "Which line hits a little too hard?",
       options: [
-        { text: "I haven’t started yet…", type: 'tung' },
-        { text: "I think I’m okay… right?", type: 'banana' },
+        { text: "I haven’t started yet.", type: 'tung' },
+        { text: "I think I’m okay, right?", type: 'banana' },
         { text: "Am I just bad at life?", type: 'croco' },
         { text: "I might be comic relief.", type: 'tralala' },
         { text: "It’s fine. It’ll pass.", type: 'lirila' }
@@ -161,9 +161,9 @@ const scores = {
     const value = Number(this.value);
     let label = "🪫 Empty";
     if (value > 85) label = "💥 Ready to explode";
-    else if (value > 65) label = "⚡ High voltage";
-    else if (value > 45) label = "🔋 Medium";
-    else if (value > 25) label = "🔌 Slightly charged";
+    else if (value > 65) label = "High voltage";
+    else if (value > 45) label = "Medium";
+    else if (value > 25) label = "Slightly charged";
     else label = "🧊 Almost off";
     document.getElementById("sliderLabel").innerText = `${label} (${value})`;
   });
@@ -230,7 +230,7 @@ const scores = {
       <span>${data.title}</span>
       <button onclick="playAudio()" id="playAgainBtn" title="Play Sound">🔊</button>
     `;
-    document.getElementById('resultDesc').innerText = data.desc;
+    // document.getElementById('resultDesc').innerText = data.desc;
   
     const audioElement = document.getElementById("beastAudio");
     audioElement.src = data.audio;
